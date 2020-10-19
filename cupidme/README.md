@@ -3,7 +3,7 @@
 **OS**: Linux   
 **Dificultad**: Basic   
 **Puntos**: 5,550   
-**Solucionado por**: xeniel
+**Solucionado por**: XENIEL
 ## Resumen 
 - Unrestricted File Upload 
 - OpenSMTPD - Remote Code Execution 

@@ -57,5 +57,5 @@ despues ejecutamos el archivo y nos da la shell de root
 *shocker.py*
 ## Referencias
 
-https://www.trendmicro.com/vinfo/us/threat-encyclopedia/archive/security-advisories/cgi_nph_test_disclosure_exploit
-https://github.com/nccgroup/shocker
+- https://www.trendmicro.com/vinfo/us/threat-encyclopedia/archive/security-advisories/cgi_nph_test_disclosure_exploit
+- https://github.com/nccgroup/shocker

